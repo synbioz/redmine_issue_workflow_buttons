@@ -1,0 +1,19 @@
+a.link-button {
+    padding: 5px 8px;
+    background: #628DB6;
+    color: #FFF;
+    margin: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+a.link-button:active {
+    background-color: #83C1EB;
+}
+
+.actions {
+    padding: 10px 0px;
+}

@@ -1,3 +1,9 @@
-<% @allowed_statuses.each do |allowed_status| %>
-    <%= link_to(allowed_status, issue_path(@issue, issue: {status_id: allowed_status.id}), method: :put, class: 'link-button') %>
+<div class="actions">
+    <% @allowed_statuses.each do |allowed_status| %>
+        <%= link_to(allowed_status, issue_path(@issue, issue: {status_id: allowed_status.id}), method: :put, class: 'link-button') %>
+    <% end %>
+</div>
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'workflow_buttons', :plugin => 'issue_workflow_buttons' %>
 <% end %>
