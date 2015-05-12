@@ -1,0 +1,3 @@
+<% @allowed_statuses.each do |allowed_status| %>
+    <%= link_to(allowed_status, issue_path(@issue, issue: {status_id: allowed_status.id}), method: :put, class: 'link-button') %>
+<% end %>
